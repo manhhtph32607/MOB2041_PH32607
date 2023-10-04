@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/custom_item_lv"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvMaSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã sách: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTenSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMaSach"
+            android:text="Tên sách: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGiaThue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@id/tvTenSach"
+            android:text="Giá thuê: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGiaThue"
+            android:text="Loại sách: "
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDeleteS"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/linear1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#8BC34A"
+        android:src="@drawable/bin" />
+
+</RelativeLayout>
